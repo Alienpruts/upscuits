@@ -299,3 +299,9 @@ function jsonUptimeRobotApi(data) {
 			myApp.dashboard.placeServer(data.monitors.monitor[i]);
 		}
 	}
+
+// Set focus if a server in danger is found, set background to flashy color.
+if ($(".label-danger")) {
+	//document.getElementsByClassName("label-danger").focus();
+	document.body.style.backgroundColor = "red";
+}
